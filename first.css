@@ -1,0 +1,53 @@
+body{
+    /* font-family: roboto,tahoma, verdana, arial; */
+    font-family: system-ui;
+    background-color: lightyellow;
+    min-width: 50px;
+}
+
+header,footer{
+    padding: 10px;
+}
+
+footer{
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color:snow
+}
+
+footer a:hover{
+    color:black;
+}
+
+
+hr{
+    margin: 16px 0 0 0;
+    padding: 0;
+}
+pre{
+    font-family: system-ui;
+}
+
+.identity{
+    color:brown;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10% 0 10%;
+    flex: auto
+}
+
+#nav a{
+    text-decoration: none;
+    color:black;
+    min-width: 20px;
+}
+
+#nav a:hover{
+    color:aliceblue;
+}
