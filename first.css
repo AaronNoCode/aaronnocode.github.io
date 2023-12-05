@@ -1,6 +1,5 @@
 body{
-    /* font-family: roboto,tahoma, verdana, arial; */
-    font-family: system-ui;
+    font-family: 'Open Sans', sans-serif,tahoma, verdana, arial;
     background-color: lightyellow;
     min-width: 50px;
 }
@@ -15,11 +14,13 @@ footer{
 
 footer a{
     text-decoration: none;
-    color:snow
+    color:snow;
+    transition: font-weight 0.30s ease-out;
 }
 
 footer a:hover{
     color:black;
+    font-weight: 900;
 }
 
 
@@ -28,7 +29,7 @@ hr{
     padding: 0;
 }
 pre{
-    font-family: system-ui;
+    font-family: "Open Sans";
 }
 
 .identity{
@@ -46,8 +47,10 @@ pre{
     text-decoration: none;
     color:black;
     min-width: 20px;
+    transition: font-weight 0.30s ease-out;
 }
 
 #nav a:hover{
     color:aliceblue;
+    font-weight: 600;
 }
