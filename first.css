@@ -1,10 +1,31 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url(fonts/OpenSans-VariableFont_wdth\,wght.ttf) format(truetype);
+    font-weight: 100 900;
+}
+
+
+
 body{
-    font-family: 'Open Sans', sans-serif,tahoma, verdana, arial;
+    padding: 0 30px;
+    font-family: "OpenSans", sans-serif, tahoma, verdana, arial;
     background-color: lightyellow;
     min-width: 50px;
 }
 
+a{
+    text-decoration: none;
+    font-family: "Raleway";
+    transition: font-weight 0.2s ease-out;
+}
+a:hover, a span:hover{
+    font-weight: 700;
+
+}
+
 header,footer{
+    font-size: 20px;
+    font-weight: 400;
     padding: 10px;
 }
 
@@ -13,14 +34,16 @@ footer{
 }
 
 footer a{
+    display: inline-block;
+    width:62px;
     text-decoration: none;
     color:snow;
-    transition: font-weight 0.30s ease-out;
+    transition: font-weight 0.2s ease-out;
+    text-align: center;
 }
 
 footer a:hover{
-    color:black;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 
@@ -29,7 +52,7 @@ hr{
     padding: 0;
 }
 pre{
-    font-family: "Open Sans";
+    font-family: "OpenSans";
 }
 
 .identity{
@@ -41,16 +64,26 @@ pre{
     justify-content: space-around;
     margin: 0 10% 0 10%;
     flex: auto
+    
 }
 
 #nav a{
+    font-weight: 500;
     text-decoration: none;
     color:black;
     min-width: 20px;
-    transition: font-weight 0.30s ease-out;
 }
 
-#nav a:hover{
-    color:aliceblue;
-    font-weight: 600;
+
+
+#nav a span{
+    display: inline-block;
+    width:70px;
+    text-wrap: nowrap;
+    transition: font-weight 0.2s ease-out;
+
+}
+
+#nav a:first-child span{
+    width: 45px;
 }
