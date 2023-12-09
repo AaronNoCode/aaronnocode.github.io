@@ -1,36 +1,46 @@
 @font-face {
+    /*This font's source is locally retrieved from fonts folder in this project and font-face is required*/
     font-family: "OpenSans";
     src: url(fonts/OpenSans-VariableFont_wdth\,wght.ttf) format(truetype);
     font-weight: 100 900;
 }
 
-
-
 body{
-    padding: 0 30px;
+    font-size: 1em;
     font-family: "OpenSans", sans-serif, tahoma, verdana, arial;
     background-color: lightyellow;
-    min-width: 50px;
+    overflow: scroll;
 }
 
 a{
     text-decoration: none;
-    font-family: "Raleway";
     transition: font-weight 0.2s ease-out;
 }
-a:hover, a span:hover{
-    font-weight: 700;
 
+#track:hover, #dev:hover, a span:hover{
+    font-weight: 800;
+    transform: skewX(-5deg);
 }
 
-header,footer{
-    font-size: 20px;
+header{
+    user-select: none;
+    margin: -8px -8px 0 -8px;
+    padding: 0 0 10px 10px;
+    font-size: 1.2em;
     font-weight: 400;
-    padding: 10px;
 }
 
+table{
+    display: flex;
+    overflow:scroll;
+}
 footer{
+    user-select: none;
+    margin: 0 -8px -10px -8px;
+    padding: 20px 0 20px 0;
     text-align: center;
+    font-size: 1.1em;
+    font-weight: 400;
 }
 
 footer a{
@@ -38,12 +48,8 @@ footer a{
     width:62px;
     text-decoration: none;
     color:snow;
-    transition: font-weight 0.2s ease-out;
     text-align: center;
-}
-
-footer a:hover{
-    font-weight: 700;
+    transition: font-weight 0.2s ease-out;
 }
 
 
@@ -52,38 +58,41 @@ hr{
     padding: 0;
 }
 pre{
-    font-family: "OpenSans";
+    /*This font's source is the google fonts api*/
+    font-family: "Raleway";
+    display:inherit;
 }
-
 .identity{
     color:brown;
 }
-
 #nav{
     display: flex;
-    justify-content: space-around;
-    margin: 0 10% 0 10%;
-    flex: auto
-    
+    justify-content:flex-start;
 }
-
 #nav a{
+    padding-left: 10px;
+    padding-right: 10px;
     font-weight: 500;
     text-decoration: none;
     color:black;
     min-width: 20px;
+    border-right: 1px solid;
 }
-
-
-
 #nav a span{
     display: inline-block;
     width:70px;
     text-wrap: nowrap;
-    transition: font-weight 0.2s ease-out;
-
+    transition: font-weight 0.2s ease-out, transform 0.2s ease-out;
+    margin-right: 15px;
+}
+#nav a:first-child{
+    width: 55px;
+    min-width: 55px;
+}
+#nav a:nth-child(3){
+    padding-right: 13px;
+}
+#nav a:nth-child(4){
+    border:none;
 }
 
-#nav a:first-child span{
-    width: 45px;
-}

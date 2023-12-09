@@ -12,17 +12,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;900&family=Recursive:wght@300..1000&display=swap" rel="stylesheet">
-    <!--! 1:40:33 video HTML CSS-->
 
 </head>
 <body>
     <header style="background-color: rgb(240, 29, 29);">
         <div id="header" style="display:flex; align-items: center;">
             <img src="img/the weeknd pfp.jpeg" style="height: 70px; margin-left: 10px;" alt="The Weeknd picture">
-            <div style="margin-left: 10px; align-items:stretch;">
-                <h1 style="margin-bottom: -25px;">Reminder</h1>
-                <h4>Song by The Weeknd</h4>
+            <div style="margin: -11px 0 0 10px; align-items:stretch;">
+                <h1 style="margin-bottom: -32px;">Reminder</h1>
+                <h4 style="font-size: 1em; margin-left: 2px;">Song by The Weeknd</h4>
             </div>
         </div>
         <div id="nav">
@@ -35,14 +33,14 @@
     <!--Autoplay al lado de controls para que se reproduzca automático pero es muy molesto-->
     <!--Muted lo mutea desde que se carga al html-->
     <!--Loop para que se repita cuando se acabe el audio-->
-    <audio controls >
+    <audio controls>
         <!--En caso de que el cliente no pueda reproducir un formato, reproduce el otro y se especifica su tipo con type-->
         <source src="audio/The Weeknd - Reminder audio.mp3" type="audio/mp3">
         <source src="audio/The Weeknd - Reminder audio.wav" type="audio/wav">
     </audio>
     <br>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/GWZ6aoIVJaE?si=b4ya5mpuKEuZfy-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    <br>
-    <a href="https://www.youtube.com/watch?v=JZjAg6fK-BQ&pp=ygUIcmVtaW5kZXI%3D" target="_blank" title="Goes to VEVO video">Original video</a>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JZjAg6fK-BQ?si=PZwkc00vQzizvgPp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <br>
+    <a  id="track" href="https://www.youtube.com/watch?v=JZjAg6fK-BQ&pp=ygUIcmVtaW5kZXI%3D" target="_blank" title="Goes to VEVO video">Original video</a>
     <hr>
     <h2 style="margin:3px 0 0 0;">Lyrics</h2>
     <pre>
@@ -121,7 +119,7 @@ Oh, oh, oh, na, na, na, na, na
     <dt>Blow</dt>
     <dd>Alternative way to call cocaine</dd>
     <dt>Teen choice</dt>
-    <dd>Referring to the kids choice awards where he was nominated</dd>
+    <dd>Referring to the kids' choice awards where he was nominated</dd>
 </dl>
 <table border="1">
     <tr align="center"> <!--Table row-->
@@ -148,8 +146,9 @@ Oh, oh, oh, na, na, na, na, na
 
 <hr>
 <br>
+
 <footer style="background-color: rgb(240, 60, 29);">
-    Developed by <a href="">Absence</a><br>
+    Developed by <a href="" id="dev">Absence</a><br>
     &copy; Copyright reserved
 </footer>
 </body>
