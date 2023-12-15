@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url(fonts/OpenSans-VariableFont_wdth\wght.ttf);
+}
+
+html {
+    background-color: rgb(12, 10, 31);
+    color: lightyellow;
+    font-family: OpenSans;
+    user-select: none;
+}
+
+#response {
+    width: 500px;
+}
