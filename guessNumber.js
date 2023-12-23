@@ -1,6 +1,6 @@
 // Shothand for console logging
 const cl = (...args) => console.log(...args)
-cl('fuck')
+
 // Necessary variables declaration, declared as const because the value binded to them is not changing, but the content inside of them.
 const input = document.querySelector('.guessField')
 const submit = document.querySelector('.submit')
