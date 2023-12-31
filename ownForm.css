@@ -1,0 +1,50 @@
+body {
+    font-family: Tahoma;
+    display: block;
+    height:100vh;
+    background-color: #faf090;
+  }
+  h1, #description {
+    text-align: center;
+    padding: 0 50px;
+  }
+  
+  .form-container {
+    background-color: #fafa;
+    width: 60%;
+    border:2px solid;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius:10px;
+  }
+  
+  label, textarea{
+    display: block;
+    margin: 10px 0; 
+  }
+  
+  .bottom{
+    border-bottom:2px solid;
+    padding-bottom: 10px;
+  }
+  
+  .submit-button {
+    margin-top: 25px;
+    width: 100%;
+    height: 2em;
+  }
+  
+  input {
+    background-color: #faf090;
+    border: none;
+    height: 1.5rem;
+  }
+  
+  textarea {
+    background-color: #faf090;
+  }
+  
+  .inline {
+    width: unset;
+    vertical-align: middle;
+  }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="content-width:device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ownForm.css">
+    <title>Form</title>
+  </head>
+  <body>
+    <h1 id="title">Hello, Welcome</h1>
+    <p id="description">Este es un formulario de prueba para ver si sirvo para hacer front :)</p>
+    <div class="form-container">
+    <form id="survey-form">
+      <label id="name-label" for="name">Name: <input type="text" id="name" name="name" placeholder="Fulanito de Tal" required></label>
+      <label id="email-label" for="email">Email: <input type="email" name="email" id="email" placeholder="example@something.com" required></label>
+      <label class="bottom" id="number-label" for="number" required>Number: <input id="number" name="number" type="number" min="10" max="100" placeholder="69"></label>
+      <label class="bottom" for="preferences">Elija su preferido: 
+      <select id="dropdown"name="preferences">
+        <option selected disabled>(Select one)</option>
+        <option value="cheese">Cheese</option>
+        <option value="ice-cream">Ice Cream</option>
+      </select>
+      </label>
+      <p>Elija su estado civil:</p>
+      <label for="soltero"><input type="radio" name="estado-civil" value="soltero" checked class="inline"> Soltero</label>
+      <label for="casado" class="bottom"><input type="radio" name="estado-civil" value="casado" class="inline"> Casado</label>
+      <label for="web"><input type="checkbox" name="interests" value="web" class="inline"> Web</label>
+      <label for="ciberseguridad"><input type="checkbox" name="interests" value="ciberseguridad" class="inline"> Ciberseguridad</label>
+      <label for="embebidos"><input type="checkbox" name="interests" value="embebidos" class="inline"> Embebidos</label>
+      <label for="machine-learning"><input type="checkbox" name="interests" value="machine-learning" class="inline"> Machine Learning</label>
+      <label for="iot"><input type="checkbox" name="interests" value="iot" class="inline"> IoT</label>
+      <label for="videojuegos" class="inline"><input type="checkbox" name="interests" value="videojuegos"> Videojuegos</label>
+      <label for="hobbies">Hobbies: </label><textarea id="hobbies" name="hobbies" placeholder="Me gusta perrearle a los viejitos" rows="3" cols="20"></textarea>
+      <input class="submit-button" type="submit" id="submit">
+    </form>
+    </div>
+  </body>
+</html>
