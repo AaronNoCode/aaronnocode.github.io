@@ -1,0 +1,69 @@
+body {
+  font-family: roboto, tahoma, system-ui, sans-serif;
+  background-color: aliceblue;
+  color: rgb(43, 45, 48);
+  box-sizing: border-box;
+}
+header {
+  padding: 3px 0;
+  text-align: center;
+  border-radius: 5px;
+  width: 95%;
+  margin: 0 auto;
+}
+#subtitle {
+  font-size: 1.2em;
+}
+main {
+  width: clamp(400px, 95%, 700px);
+  margin: 0 auto;
+  background-color: cadetblue;
+  padding: 10px;
+  border-radius: 10px;
+}
+#img-div {
+  background-color: aliceblue;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+#image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  border-radius: 5px;
+}
+#img-caption {
+  text-align: center;
+  font-size: 0.9em;
+}
+#tribute-info {
+  width: clamp(95%, 90%, 50%);
+}
+#list-header {
+  text-align: center;
+  margin: 40px 0;
+}
+#tribute-info > ul > li {
+  padding: 5px 0;
+  width: clamp(95%, 30%, 40%);
+  margin: 0 auto;
+}
+footer {
+  background-color: aliceblue;
+  padding: 5px;
+  border-radius: 5px;
+}
+footer > p {
+  text-align: center;
+  font-weight: bold;
+}
+footer a {
+  text-decoration: none;
+  color: cadetblue;
+}
+footer a:hover {
+  color: rgb(243, 107, 152);
+}
