@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="guessNumber.js" defer></script>
+    <link rel="stylesheet" href="guessNumber.css" />
+    <title>JS test</title>
+  </head>
+  <body>
+    <h1>Guess the number</h1>
+    <h3>Input a number between 1 and 100</h3>
+    <label for="numberIn">Input a number:</label>
+    <input
+      type="number"
+      name="numberIn"
+      id="numberIn"
+      min="1"
+      max="100"
+      required
+      class="guessField"
+    />
+    <input type="submit" name="submit" id="submit" class="submit" />
+    <p id="tryCounter"></p>
+    <p id="response"></p>
+    <button id="newGameButton">Start new game</button>
+    <p id="hint"></p>
+  </body>
+</html>
